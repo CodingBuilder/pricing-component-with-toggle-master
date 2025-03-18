@@ -164,6 +164,7 @@ section .offers .offer .price {
 section .offers .offer .price h2 {
   margin: auto;
   font-size: 45px;
+  color: var(--headingColor);
 }
 
 @media (max-width: 1000px) {
