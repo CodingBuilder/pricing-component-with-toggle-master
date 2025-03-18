@@ -1,22 +1,22 @@
 "use strict";
 
 const changeBtn = document.querySelector(".period-options .change");
-const basicPrice = document.querySelector(".offer.one h2");
-const proPrice = document.querySelector(".offer.pro h2");
-const masterPrice = document.querySelector(".offer.two h2");
+const basicPrice = document.querySelector(".offer.one h2 span");
+const proPrice = document.querySelector(".offer.pro h2 span");
+const masterPrice = document.querySelector(".offer.two h2 span");
 
 // A Function To Set The Prices To The Monthly Prices
 function setMonthlyPrice() {
-  basicPrice.textContent = "$19.99";
-  proPrice.textContent = "$24.99";
-  masterPrice.textContent = "$39.99";
+  basicPrice.textContent = "19.99";
+  proPrice.textContent = "24.99";
+  masterPrice.textContent = "39.99";
 }
 
 // A Function To Set The Prices To The Annually Prices
 function setAnnuallyPrice() {
-  basicPrice.textContent = "$199.9";
-  proPrice.textContent = "$249.9";
-  masterPrice.textContent = "$399.9";
+  basicPrice.textContent = "199.9";
+  proPrice.textContent = "249.9";
+  masterPrice.textContent = "399.9";
 }
 
 // Check If There Is A Session Storage And Set The Current Price Format

@@ -107,6 +107,12 @@ section .offers {
   }
 }
 
+@media (max-width: 1000px) {
+  section .offers {
+    width: 98%;
+  }
+}
+
 @media (max-width: 600px) {
   section .offers {
     flex-direction: column;
@@ -148,50 +154,87 @@ section .offers .offer h3 {
   margin: 15px 0 5px;
 }
 
-section .offers .offer h2 {
+section .offers .offer .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+section .offers .offer .price h2 {
+  margin: auto;
+  font-size: 45px;
+}
+
+@media (max-width: 1000px) {
+  section .offers .offer .price h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 775px) {
+  section .offers .offer .price h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  section .offers .offer .price h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 390px) {
+  section .offers .offer .price h2 {
+    font-size: 40px;
+  }
+}
+
+section .offers .offer .price span {
   color: var(--headingColor);
   font-size: 80px;
   margin: 20px 0;
+  font-weight: bold;
 }
 
 @media (max-width: 1270px) {
-  section .offers .offer h2 {
+  section .offers .offer .price span {
     font-size: 70px;
   }
 }
 
 @media (max-width: 1000px) {
-  section .offers .offer h2 {
+  section .offers .offer .price span {
     font-size: 60px;
   }
 }
 
 @media (max-width: 775px) {
-  section .offers .offer h2 {
+  section .offers .offer .price span {
     font-size: 50px;
   }
 }
 
 @media (max-width: 650px) {
-  section .offers .offer h2 {
+  section .offers .offer .price span {
     font-size: 45px;
   }
 }
 
 @media (max-width: 600px) {
-  section .offers .offer h2 {
+  section .offers .offer .price span {
     font-size: 80px;
   }
 }
 
 @media (max-width: 390px) {
-  section .offers .offer h2 {
+  section .offers .offer .price span {
     font-size: 70px;
   }
 }
 
 @media (max-width: 320px) {
-  section .offers .offer h2 {
+  section .offers .offer .price span {
     font-size: 65px;
   }
 }
@@ -298,7 +341,11 @@ section .offers .offer.pro h3 {
   color: white;
 }
 
-section .offers .offer.pro h2 {
+section .offers .offer.pro .price h2{
+  color: white;
+}
+
+section .offers .offer.pro .price span{
   color: white;
 }
 
