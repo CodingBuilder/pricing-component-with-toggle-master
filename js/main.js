@@ -1,9 +1,9 @@
 "use strict";
 
-const changeBtn = document.querySelector(".period-options .change");
-const basicPrice = document.querySelector(".offer.one h2 span");
-const proPrice = document.querySelector(".offer.pro h2 span");
-const masterPrice = document.querySelector(".offer.two h2 span");
+let changeBtn = document.querySelector(".period-options .change");
+let basicPrice = document.querySelector(".offer.one .price span");
+let proPrice = document.querySelector(".offer.pro .price span");
+let masterPrice = document.querySelector(".offer.two .price span");
 
 // A Function To Set The Prices To The Monthly Prices
 function setMonthlyPrice() {
@@ -34,7 +34,7 @@ if (window.sessionStorage.getItem("choice")) {
 }
 
 changeBtn.addEventListener("click", (e) => {
-  e.target.classList.toggle("clicked");
+  changeBtn.classList.toggle("clicked");
 
   if (e.target.classList.contains("clicked")) {
 
